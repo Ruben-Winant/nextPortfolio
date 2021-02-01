@@ -9,10 +9,26 @@ const Project = () => {
   const router = useRouter();
   const [images, setImages] = useState<string[]>([]);
   const [keywords, setKeywords] = useState<string>("");
+  const [project, setProject] = useState<Project>({});
   const { pName } = router.query;
-  const currProject = projectsData.filter((p) => p.name === pName)[0];
+
+  interface Project {
+    name: string;
+    description: string;
+    keywords: string[];
+    liveLink: string;
+    github: string;
+    client: string;
+    mission: string;
+    role: string;
+    approach: string;
+    pictures: [];
+    cardImg: string;
+  }
 
   useEffect(() => {
+    const currProject = projectsData.filter((p) => p.name === pName)[0];
+
     let i = 0;
     const imgs: any = [];
     {
@@ -30,6 +46,7 @@ const Project = () => {
     }
     setImages(imgs);
     setKeywords(currProject.keywords.map((t) => " " + t).toString());
+    setProject(project);
   }, []);
 
   return (
@@ -38,23 +55,23 @@ const Project = () => {
       showExtendedNavbar={true}
     >
       <div className={styles.projectDescContainer}>
-        <h1>{currProject.name}</h1>
+        <h1>{project.name}</h1>
         <div className={styles.detailsContainer}>
           <div className={styles.detailsRow}>
             <h3>CLIENT</h3>
-            <p>{currProject.client}</p>
+            <p>{project.client}</p>
           </div>
           <div className={styles.detailsRow}>
             <h3>MISSION</h3>
-            <p>{currProject.mission}</p>
+            <p>{project.mission}</p>
           </div>
           <div className={styles.detailsRow}>
             <h3>APPROACH</h3>
-            <p>{currProject.approach}</p>
+            <p>{project.approach}</p>
           </div>
           <div className={styles.detailsRow}>
             <h3>MY ROLE</h3>
-            <p>{currProject.role}</p>
+            <p>{project.role}</p>
           </div>
           <div className={styles.detailsRow}>
             <h3>TECHNOLOGIES</h3>
@@ -62,7 +79,7 @@ const Project = () => {
           </div>
           <div className={styles.detailsRow}>
             <h3>LINK</h3>
-            <a>{currProject.liveLink}</a>
+            <a>{project.liveLink}</a>
           </div>
         </div>
 
