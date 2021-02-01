@@ -9,7 +9,7 @@ const Project = () => {
   const router = useRouter();
   const [images, setImages] = useState<string[]>([]);
   const [keywords, setKeywords] = useState<string>("");
-  const [project, setProject] = useState<Project>({});
+  const [project, setProject] = useState<Project>();
   const { pName } = router.query;
 
   interface Project {
@@ -49,7 +49,7 @@ const Project = () => {
     setProject(project);
   }, []);
 
-  return (
+  return project ? (
     <Layout
       title="Home | Next.js + TypeScript Example"
       showExtendedNavbar={true}
@@ -89,7 +89,7 @@ const Project = () => {
         </div>
       </div>
     </Layout>
-  );
+  ) : null;
 };
 
 export default Project;
