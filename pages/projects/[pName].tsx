@@ -10,9 +10,7 @@ const Project = () => {
   const [images, setImages] = useState<string[]>([]);
 
   const { pName } = router.query;
-  const currProject = projectsData.filter(
-    (p) => p.name === pName.toString()
-  )[0];
+  const currProject = projectsData.filter((p) => p.name === pName)[0];
 
   useEffect(() => {
     let i = 0;
