@@ -46,7 +46,7 @@ const Project = () => {
     }
     setImages(imgs);
     setKeywords(currProject.keywords.map((t) => " " + t).toString());
-    setProject(project);
+    setProject(currProject as Project);
   }, []);
 
   return project ? (
