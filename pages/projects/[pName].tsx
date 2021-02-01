@@ -8,7 +8,7 @@ import ScreenshotCard from "../../components/ScreenshotCard";
 const Project = () => {
   const router = useRouter();
   const [images, setImages] = useState<string[]>([]);
-
+  const [keywords, setKeywords] = useState<string>("");
   const { pName } = router.query;
   const currProject = projectsData.filter((p) => p.name === pName)[0];
 
@@ -29,9 +29,8 @@ const Project = () => {
       });
     }
     setImages(imgs);
+    setKeywords(currProject.keywords.map((t) => " " + t).toString());
   }, []);
-
-  let keywords = currProject.keywords.map((t) => " " + t).toString();
 
   return (
     <Layout
