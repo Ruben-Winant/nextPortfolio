@@ -1,4 +1,3 @@
-import { useState } from "react";
 import projectsData from "../utils/projectsData.json";
 import Layout from "../components/Layout";
 import styles from "../styles/Projects.module.scss";
