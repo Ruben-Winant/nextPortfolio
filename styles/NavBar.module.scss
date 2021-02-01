@@ -1,0 +1,37 @@
+.navBarInner {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+
+    .navIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    span {
+      margin-top: 5px;
+      line-height: 0.8rem;
+    }
+  }
+
+  a:hover {
+    color: #ff3347;
+    div {
+      display: flex;
+    }
+  }
+}

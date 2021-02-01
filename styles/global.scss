@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 90vh;
+  font-size: 18px;
+  margin: 0;
+  background-color: #1d1d1d;
+
+  ::selection {
+    color: #1d1d1d;
+    background-color: #ff3347;
+  }
+}
+
+h1 {
+  line-height: 3.5rem;
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.navElActive {
+  svg {
+    fill: #ff3347;
+  }
+  span,
+  .navIcon {
+    color: #ff3347;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.activeEl {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.red {
+  color: #ff3347;
+}
+
+.dark {
+  color: #1d1d1d;
+}
+
+.white {
+  color: #fff;
+}
+
+.bgGray {
+  background-color: #666;
+}
+
+.textWidth {
+  max-width: 55%;
+}
+
+.textAlRight {
+  text-align: right;
+}
+
+.verticalText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

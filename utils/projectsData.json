@@ -1,0 +1,98 @@
+[{
+    "name": "Lighthouse",
+    "description": "Brand guide creator",
+    "keywords": ["Next.js", "Vercel", "React", "React context", "Firebase"],
+    "liveLink": "https://lighthouse-7y2svigby.vercel.app/",
+    "github": "https://github.com/Ruben-Winant/Lighthouse",
+    "client": "(Self made project) UI Designers",
+    "mission": "Create a web application where designers can quickly generate simple yet modern brand guides.",
+    "role": "As this is a self made project, the main goal was learning how to work with next.js, react context and handling some file types. Therefore i will do everything from design to code to publishing and maintaining.",
+    "approach": "I started out going over the next.js docs and learning how to make a simple front page. I really liked the way Next.js works so i came up with this idea to try in it. I then made some wireframes to get an idea of what i wanted and started working on developing page per page. ",
+    "pictures": [{
+      "pictureName": "Lighthouse1.png",
+      "pictureDescription": "This is the index page which i kept simple and clean."
+    }, {
+      "pictureName": "Lighthouse2.png",
+      "pictureDescription": "I kept the layout from the index which i use for almost every screen."
+    }, {
+      "pictureName": "Lighthouse3.png",
+      "pictureDescription": "All the data gets saved to a global context so it can be used anywhere."
+    }, {
+      "pictureName": "Lighthouse4.png",
+      "pictureDescription": "From here on out the pages will get more complicated."
+    }, {
+      "pictureName": "Lighthouse5.png",
+      "pictureDescription": "I needed to let the user upload a .svg file. The component would also be needed to function as a display for the uploaded file. So i made a custom input component which functions different depending on what props it receives"
+    }, {
+      "pictureName": "Lighthouse6.png",
+      "pictureDescription": "Just like the previous image i re-used the input component here for a different use case. The component start of with an image instead of the input itself. It can however still be removed and re-uploaded"
+    }, {
+      "pictureName": "Lighthouse7.png",
+      "pictureDescription": "This was a really fun one to make. I extract the colors from the svg logo and give the user the option to either change, add or remove the colors."
+    }, {
+      "pictureName": "Lighthouse8.png",
+      "pictureDescription": "This page also uses the input component to let the user add the icons they want to use."
+    }, {
+      "pictureName": "Lighthouse9.png",
+      "pictureDescription": "Here i let the user choose the font from all of google's fonts with a dynamic example string that can be changed."
+    }],
+    "cardImg": "LighthouseCard.png"
+  },
+  {
+    "name": "Movix",
+    "description": "Mobile movie app",
+    "keywords": ["React Native", "Firebase", "TMDB api"],
+    "liveLink": "https://play.google.com/store/apps/details?id=com.rubenwinant.movix",
+    "github": "https://github.com/Ruben-Winant/Movix",
+    "client": "(Selfmade) made for movie lovers",
+    "mission": "Create a way for people to easily find a new movie to watch.",
+    "role": "This is a self made project so learning React Native was the main focus. I designed and coded this app from the ground up using React Native with Expo.",
+    "approach": "When i came up with the idea i started out drawing some wireframes. When i was happy with the result i looked at the documentation and started following some basic tutorials from React Native. After playing with it for a while i started making the app. I used Trello to organize what needed to happen and had some good friends check up on it to receive feedback.",
+    "pictures": [{
+      "pictureName": "",
+      "pictureDescription": ""
+    }],
+    "cardImg": "MovixCard.png"
+  },
+  {
+    "name": "UI | UX designs",
+    "description": "Dribbble entries",
+    "keywords": ["Dribbble", "Adobe XD", "Inkscape"],
+    "liveLink": "https://dribbble.com/rubenw",
+    "github": "",
+    "client": "Myself",
+    "mission": "Learn about UI and UX development by creating wireframes.",
+    "role": "Drawing, Designing and Uploading them on Dribbble.",
+    "approach": "I mostly start out by drawing some basic design's on paper and when i'm happy with them i start remaking them in Adobe XD",
+    "pictures": [{
+      "pictureName": "",
+      "pictureDescription": ""
+    }],
+    "cardImg": "dribbbleCard.png"
+  },
+  {
+    "name": "Journal of Writing Research",
+    "description": "",
+    "keywords": ["C#", "CSS", "XML"],
+    "liveLink": "not live yet",
+    "github": "",
+    "client": "Journal of Writing Research, an international peer reviewed journal that publishes papers that describe scientific study studies of the processes by which writing is produced and or by which it can be effectively taught. ",
+    "mission": "Assisting the team in transferring the data and styling from their old site to a new, cms based one.",
+    "role": "My role in this project was to create a program that converts the XML format of the old site to the new format. I also assisted in creating the new stylesheets and documenting everything.",
+    "approach": "The existing team and I first contacted the client and discussed what was expected of us. After that we got in a call to see what everyone's strengths are and started planning out the fist sprint. There after each one of us worked on their parts and kept in close contact for guidance or planning. We met up with the client every week to get feedback that we could process in the upcoming sprint.",
+    "pictures": [{
+      "pictureName": "OldJowrHome.png",
+      "pictureDescription": "This image shows the old site's layout and styling. We were assigned to modernize the brand's looks to the new site."
+    }, {
+      "pictureName": "NewJowr.png",
+      "pictureDescription": "Here's a screenshot of the final front page. As our client asked we took the elements from the old site and gave it a modern look and feel."
+    }, {
+      "pictureName": "NewJowr2.png",
+      "pictureDescription": "This image shows how kept the brand colors throughout the pages."
+    }, {
+      "pictureName": "JowrProgram.png",
+      "pictureDescription": "Here's a screenshot of the program i made. There was no need for a fancy UI here, the program just needed to work and that it did!"
+    }],
+    "cardImg": "JowrCard.png"
+  }
+]

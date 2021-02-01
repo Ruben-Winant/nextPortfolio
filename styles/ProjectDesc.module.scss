@@ -1,0 +1,39 @@
+.projectDescContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  width: 100%;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h2::first-letter,
+  h3::first-letter {
+    color: #ff3347;
+  }
+
+  h3,
+  p {
+    color: white;
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .detailsRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+
+    p {
+      width: 70%;
+      text-align: right;
+    }
+  }
+}

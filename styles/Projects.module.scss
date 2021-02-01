@@ -1,0 +1,19 @@
+.projectsContainer {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    margin-right: 75px;
+  }
+}
+
+.projectCardList {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}

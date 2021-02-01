@@ -1,0 +1,38 @@
+.outerContainer {
+  margin: 0rem 15% 0rem 15%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  button {
+    margin-left: auto;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    .themeIcon {
+      color: #666;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+.outerContentContainer {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+}
+
+.innerContentContainer {
+}
