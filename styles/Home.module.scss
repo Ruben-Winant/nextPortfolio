@@ -1,3 +1,8 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .rolesSpanColor {
   color: #666;
   font-weight: 700;
@@ -22,40 +27,92 @@
   }
 }
 
+.rect {
+  top: 20%;
+  right: 35%;
+  position: absolute;
+  width: 15%;
+  height: 26%;
+  border: 1.5rem solid #33daff;
+  box-shadow: 0px 0px 35px #33daff;
+  animation: spin 10s infinite;
+}
+
+.rect2 {
+  top: 40%;
+  right: 20%;
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  border: 1.5rem solid #ff3347;
+  box-shadow: 0px 0px 35px #ff3347;
+  animation: spin 5s infinite;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .homeContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .rect,
+  .rect2 {
+    display: none;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .rect,
+  .rect2 {
+    display: none;
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+  .rect,
+  .rect2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rect {
+    top: 20%;
+    right: 25%;
+  }
+  .rect2 {
+    top: 40%;
+    right: 10%;
+  }
+}
+
 @media only screen and (min-width: 1920px) {
   .rect {
     top: 20%;
     right: 35%;
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    border: 1.5rem solid #33daff;
-    box-shadow: 0px 0px 35px #33daff;
-    animation: spin 10s infinite;
   }
-
   .rect2 {
     top: 40%;
     right: 20%;
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    border: 1.5rem solid #ff3347;
-    box-shadow: 0px 0px 35px #ff3347;
-    animation: spin 5s infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1) rotate(0deg);
   }
 
-  @keyframes spin {
-    0% {
-      transform: scale(1) rotate(0deg);
-    }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
 
-    50% {
-      transform: scale(1.2) rotate(180deg);
-    }
-
-    100% {
-      transform: scale(1) rotate(0deg);
-    }
+  100% {
+    transform: scale(1) rotate(0deg);
   }
 }

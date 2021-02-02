@@ -21,6 +21,11 @@
       color: #ff3347;
     }
   }
+
+  .skillIcon {
+    min-width: 40px;
+    min-height: 40px;
+  }
 }
 
 .activeSkillset {
@@ -35,6 +40,113 @@
   align-items: center;
   padding: 15px;
   justify-content: space-between;
-  height: 30rem;
+  height: fit-content;
   width: 30rem;
+}
+
+.skillsHeader {
+  display: flex;
+  align-items: center;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .skillsDisplay {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .skillsDisplay {
+    justify-content: space-around;
+    height: fit-content;
+    width: 20rem;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .skillsDisplay {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .skillsDisplay {
+    justify-content: space-around;
+    height: fit-content;
+    width: 20rem;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .skillsHeader h1 div span {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .skillsDisplay {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .skillsDisplay {
+    justify-content: space-around;
+    height: fit-content;
+    width: 20rem;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .skillsDisplay {
+    width: 30%;
+  }
 }

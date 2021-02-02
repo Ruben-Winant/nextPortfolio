@@ -4,4 +4,51 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15%;
+  margin-bottom: 15%;
+
+  .selfie {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    background-color: aliceblue;
+  }
+
+  p {
+    max-width: 60%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .aboutContainer {
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .aboutContainer {
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
 }

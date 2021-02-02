@@ -15,16 +15,18 @@ const ProjectCard = ({ cardImg, name, tech, desc }: props) => {
     <div className={styles.cardContainer}>
       <div className={styles.innerCardContainer}>
         <div
+          onClick={() => alert()}
           className={styles.innerCardFront}
           style={{
             backgroundImage: `url('./` + cardImg + `')`,
             backgroundSize: "contain",
           }}
         >
-          <div>
+          <div className={styles.cardHeader}>
             <h2>{name.toUpperCase()}</h2>
             <p>{desc}</p>
           </div>
+
           <p>{keywords}</p>
         </div>
 

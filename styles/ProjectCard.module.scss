@@ -70,3 +70,84 @@
 .cardContainer:hover .innerCardContainer {
   transform: rotateY(180deg);
 }
+
+@media (max-width: 480px) {
+  .cardContainer {
+    margin: 15px 15px 15px 15px;
+    width: 170px;
+    height: 270px;
+    padding: 10px;
+
+    .innerCardContainer {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        max-width: 150px;
+        margin: 0;
+        word-wrap: break-word;
+      }
+    }
+
+    .cardHeader {
+      max-width: 100%;
+
+      h2 {
+        line-height: normal;
+        width: fit-content;
+      }
+    }
+  }
+
+  .innerCardFront,
+  .innerCardBack {
+    padding: 10px;
+    width: 150px;
+    height: 250px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+  .cardContainer {
+    margin: 15px 15px 15px 15px;
+    width: 170px;
+    height: 270px;
+    padding: 10px;
+
+    .innerCardContainer {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        max-width: 150px;
+        margin: 0;
+        word-wrap: break-word;
+      }
+    }
+
+    .cardHeader {
+      max-width: 100%;
+
+      h2 {
+        line-height: normal;
+        width: fit-content;
+      }
+    }
+  }
+
+  .innerCardFront,
+  .innerCardBack {
+    padding: 10px;
+    width: 150px;
+    height: 250px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}

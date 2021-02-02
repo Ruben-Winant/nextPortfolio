@@ -9,7 +9,7 @@ const IndexPage = () => {
       title="Home | Next.js + TypeScript Example"
       showExtendedNavbar={false}
     >
-      <div>
+      <div className={styles.homeContainer}>
         <h1>
           Hi, <br /> i'm Ruben, <br />
           web developer

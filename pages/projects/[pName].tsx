@@ -83,7 +83,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div>
+        <div className={styles.gallery}>
           <h2>GALLERY</h2>
           {images}
         </div>

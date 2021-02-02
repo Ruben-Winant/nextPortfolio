@@ -24,7 +24,7 @@ const SkillsPage = () => {
       showExtendedNavbar={true}
     >
       <div className={styles.skillsContainer}>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div className={styles.skillsHeader}>
           <h1>
             <div className="verticalText">
               <span className="red">S</span>
@@ -35,28 +35,29 @@ const SkillsPage = () => {
               <span>S</span>
             </div>
           </h1>
-
-          <ul className="white">
-            <li
-              onClick={() => setType(skillType.BE)}
-              className={selType === skillType.BE ? styles.activeSkillset : ""}
-            >
-              Back End
-            </li>
-            <li
-              onClick={() => setType(skillType.FE)}
-              className={selType === skillType.FE ? styles.activeSkillset : ""}
-            >
-              Front End
-            </li>
-            <li
-              onClick={() => setType(skillType.OT)}
-              className={selType === skillType.OT ? styles.activeSkillset : ""}
-            >
-              Other
-            </li>
-          </ul>
         </div>
+
+        <ul className="white">
+          <li
+            onClick={() => setType(skillType.BE)}
+            className={selType === skillType.BE ? styles.activeSkillset : ""}
+          >
+            Back End
+          </li>
+          <li
+            onClick={() => setType(skillType.FE)}
+            className={selType === skillType.FE ? styles.activeSkillset : ""}
+          >
+            Front End
+          </li>
+          <li
+            onClick={() => setType(skillType.OT)}
+            className={selType === skillType.OT ? styles.activeSkillset : ""}
+          >
+            Other
+          </li>
+        </ul>
+
         <div className={styles.skillsDisplay}>
           <SkillIcon
             active={selType === skillType.FE ? true : false}
@@ -64,7 +65,7 @@ const SkillsPage = () => {
           >
             <AiFillHtml5
               color={selType === skillType.FE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -74,7 +75,7 @@ const SkillsPage = () => {
           >
             <DiReact
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -84,7 +85,7 @@ const SkillsPage = () => {
           >
             <DiReact
               color={selType === skillType.FE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -94,7 +95,7 @@ const SkillsPage = () => {
           >
             <IoLogoJavascript
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -104,7 +105,7 @@ const SkillsPage = () => {
           >
             <SiJson
               color={selType === skillType.BE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -114,7 +115,7 @@ const SkillsPage = () => {
           >
             <SiAdobexd
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -124,7 +125,7 @@ const SkillsPage = () => {
           >
             <SiTypescript
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -139,7 +140,7 @@ const SkillsPage = () => {
           >
             <SiNextDotJs
               color={selType === skillType.FE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -149,7 +150,7 @@ const SkillsPage = () => {
           >
             <SiDotNet
               color={selType === skillType.BE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -159,7 +160,7 @@ const SkillsPage = () => {
           >
             <AiFillGithub
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -169,7 +170,7 @@ const SkillsPage = () => {
           >
             <DiScrum
               color={selType === skillType.OT ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -179,7 +180,7 @@ const SkillsPage = () => {
           >
             <SiCss3
               color={selType === skillType.FE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
 
@@ -189,7 +190,7 @@ const SkillsPage = () => {
           >
             <DiMysql
               color={selType === skillType.BE ? "#ff3347" : "#FFF"}
-              style={{ width: 65, height: 65 }}
+              className={styles.skillIcon}
             />
           </SkillIcon>
         </div>

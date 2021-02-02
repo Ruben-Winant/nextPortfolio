@@ -69,3 +69,100 @@
     color: #ff3347;
   }
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contactContainer {
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: white;
+
+    .formRow {
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      input,
+      textarea {
+        margin: 0;
+      }
+    }
+  }
+
+  .socialsBar {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    .socialIcon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .contactContainer {
+    flex-direction: column;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: white;
+
+    .formRow {
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      input,
+      textarea {
+        margin: 0;
+      }
+    }
+  }
+
+  .socialsBar {
+    flex-direction: row;
+    width: 100%;
+
+    .socialIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .contactContainer {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .formContainer {
+    .formRow {
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      input,
+      textarea {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+}

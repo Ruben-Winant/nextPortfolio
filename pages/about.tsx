@@ -17,15 +17,12 @@ const AboutPage = () => {
             <span>T</span>
           </div>
         </h1>
-        <p className="white textWidth textAlRight">
+        <p className="white textAlRight">
           I enjoy building data rich web applications and learning about new
           stuff such as app and game development. I'm also very motivated to
           improve my programming knowledge and take on new challenges.
         </p>
-        <div
-          className="bgGray"
-          style={{ width: 250, height: 250, borderRadius: 360 }}
-        ></div>
+        <div className={styles.selfie}></div>
       </div>
     </Layout>
   );

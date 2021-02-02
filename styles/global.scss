@@ -82,3 +82,39 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .verticalText {
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .verticalText {
+    flex-direction: row;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
