@@ -1,5 +1,4 @@
 import {} from "react";
-import styles from "../styles/ProjectDesc.module.scss";
 
 interface props {
   right?: boolean;
