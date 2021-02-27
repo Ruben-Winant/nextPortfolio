@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Head } from "next/document";
+import Head from "next/head";
 import styles from "../styles/Layout.module.scss";
 import NavigationBar from "./NavigationBar";
 
@@ -19,10 +19,7 @@ const Layout = ({
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta
-        name="description"
-        content="I design and develop modern data driven web and mobile applications."
-      />
+      <meta name="description" content="I make modern data driven web and mobile applications."></meta>
     </Head>
     <header className={styles.header}>
       <nav
