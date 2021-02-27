@@ -3,10 +3,7 @@ import styles from "../styles/About.module.scss";
 
 const AboutPage = () => {
   return (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={true}
-    >
+    <Layout title="About | Ruben Winant" showExtendedNavbar={true}>
       <div className={styles.aboutContainer}>
         <h1>
           <div className="verticalText">

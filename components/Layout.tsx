@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import Head from "next/head";
 import styles from "../styles/Layout.module.scss";
 import NavigationBar from "./NavigationBar";
-import { AiFillBulb } from "react-icons/ai";
 
 type Props = {
   children?: ReactNode;
@@ -12,7 +11,7 @@ type Props = {
 
 const Layout = ({
   children,
-  title = "This is the default title",
+  title = "Ruben Winant",
   showExtendedNavbar,
 }: Props) => (
   <div className={styles.outerContainer}>
@@ -20,6 +19,10 @@ const Layout = ({
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="description"
+        content="I design and develop modern data driven web and mobile applications."
+      />
     </Head>
     <header className={styles.header}>
       <nav
@@ -28,9 +31,6 @@ const Layout = ({
       >
         <NavigationBar extend={false} />
       </nav>
-      <button>
-        <AiFillBulb className={styles.themeIcon} />
-      </button>
     </header>
     <div className={styles.outerContentContainer}>{children}</div>
   </div>

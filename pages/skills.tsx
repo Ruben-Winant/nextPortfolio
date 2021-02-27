@@ -19,10 +19,7 @@ const SkillsPage = () => {
   const [selType, setType] = useState<skillType>();
 
   return (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={true}
-    >
+    <Layout title="Skills | Ruben Winant" showExtendedNavbar={true}>
       <div className={styles.skillsContainer}>
         <div className={styles.skillsHeader}>
           <h1>

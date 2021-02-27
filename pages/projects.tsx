@@ -5,10 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const ProjectsPage = () => {
   return (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={true}
-    >
+    <Layout title="Projects | Ruben Winant" showExtendedNavbar={true}>
       <div className={styles.projectsContainer}>
         <h1>
           <div className="verticalText">

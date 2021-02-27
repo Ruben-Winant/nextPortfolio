@@ -10,10 +10,7 @@ import styles from "../styles/Contact.module.scss";
 
 const AboutPage = () => {
   return (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={true}
-    >
+    <Layout title="Contact | Ruben Winant" showExtendedNavbar={true}>
       <div className={styles.contactContainer}>
         <h1>
           <div className="verticalText">

@@ -50,10 +50,7 @@ const Project = () => {
   }, []);
 
   return project ? (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={true}
-    >
+    <Layout title={project.name + " | Ruben Winant"} showExtendedNavbar={true}>
       <div className={styles.projectDescContainer}>
         <h1>{project.name}</h1>
         <div className={styles.detailsContainer}>

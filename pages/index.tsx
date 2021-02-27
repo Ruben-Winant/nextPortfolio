@@ -5,10 +5,7 @@ import styles from "../styles/Home.module.scss";
 
 const IndexPage = () => {
   return (
-    <Layout
-      title="Home | Next.js + TypeScript Example"
-      showExtendedNavbar={false}
-    >
+    <Layout title="Home | Ruben Winant" showExtendedNavbar={false}>
       <div className={styles.homeContainer}>
         <h1>
           Hi, <br /> i'm Ruben, <br />
