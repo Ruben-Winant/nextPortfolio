@@ -15,7 +15,7 @@ const IndexPage = () => {
           Front End | Back End | Mobile
         </span>
 
-        <Link href="/contact">
+        <Link href="/contact" passHref>
           <div className={styles.button}>
             <a>Contact</a>
           </div>
