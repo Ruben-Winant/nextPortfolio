@@ -1,9 +1,15 @@
-import Document, { DocumentContext, Main, NextScript } from "next/document";
+import Document, {
+  DocumentContext,
+  Head,
+  Main,
+  NextScript,
+} from "next/document";
 
 class MyDocument extends Document {
   render() {
     return (
       <html lang="en">
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
