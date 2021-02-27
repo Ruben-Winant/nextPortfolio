@@ -16,9 +16,7 @@ const IndexPage = () => {
         </span>
 
         <Link href="/contact" passHref>
-          <div className={styles.button}>
-            <a>Contact</a>
-          </div>
+          <a className={styles.button}>Contact</a>
         </Link>
 
         <NavigationBar extend={true} />
