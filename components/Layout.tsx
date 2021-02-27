@@ -18,12 +18,12 @@ const Layout = ({
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
+      <meta name="robots" content="all" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta
         name="description"
         content="I make modern data driven web and mobile applications."
       />
-      <meta name="robots" content="all" />
     </Head>
     <header className={styles.header}>
       <nav
