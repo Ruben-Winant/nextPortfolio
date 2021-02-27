@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://rubenwinant.be/</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/about</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/skills</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/projects</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/contact</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/projects/Lighthouse</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/projects/Movix</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/projects/UI%20%7C%20UX%20designs</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rubenwinant.be/projects/Journal%20of%20Writing%20Research</loc>
+  <lastmod>2021-02-27T23:53:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
