@@ -29,24 +29,28 @@ const Project = () => {
   useEffect(() => {
     const currProject = projectsData.filter((p) => p.name === pName)[0];
 
-    let i = 0;
-    const imgs: any = [];
-    {
-      currProject.pictures.map((pic) => {
-        imgs.push(
-          <ScreenshotCard
-            key={pic.pictureName}
-            img={pic.pictureName}
-            imgDesc={pic.pictureDescription}
-            right={i % 2 === 0 ? false : true}
-          />
-        );
-        i++;
-      });
+    if (currProject === null || typeof currProject === "undefined") {
+      history.back();
+    } else {
+      let i = 0;
+      const imgs: any = [];
+      {
+        currProject.pictures.map((pic) => {
+          imgs.push(
+            <ScreenshotCard
+              key={pic.pictureName}
+              img={pic.pictureName}
+              imgDesc={pic.pictureDescription}
+              right={i % 2 === 0 ? false : true}
+            />
+          );
+          i++;
+        });
+      }
+      setImages(imgs);
+      setKeywords(currProject.keywords.map((t) => " " + t).toString());
+      setProject(currProject as Project);
     }
-    setImages(imgs);
-    setKeywords(currProject.keywords.map((t) => " " + t).toString());
-    setProject(currProject as Project);
   }, []);
 
   return project ? (
