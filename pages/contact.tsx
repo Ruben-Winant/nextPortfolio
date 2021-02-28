@@ -21,15 +21,15 @@ const ContactPage = () => {
 
     emailjs
       .send(
-        "service_wnle8nq",
-        "template_j5vq5p4",
+        process.env.SERVICE_ID!,
+        process.env.TEMPLATE_ID!,
         {
           from_name: name,
           to_name: "ruben",
           reply_to: email,
           message: message,
         },
-        "user_9NAr7PjI9d03CvXxDc9sT"
+        process.env.USER_ID!
       )
       .then(({ status }) => {
         if (status === 200) {
