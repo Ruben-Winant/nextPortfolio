@@ -15,9 +15,8 @@ const AboutPage = () => {
           </div>
         </h1>
         <p className="white textAlRight">
-          I enjoy building data rich web applications and learning about new
-          stuff such as app and game development. I'm also very motivated to
-          improve my programming knowledge and take on new challenges.
+          I'm Ruben and i enjoy designing and developing modern, data driven web
+          and mobile applications.
         </p>
         <div className={styles.selfie}></div>
       </div>

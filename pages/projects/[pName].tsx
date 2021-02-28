@@ -76,7 +76,7 @@ const Project = () => {
           </div>
           <div className={styles.detailsRow}>
             <h3>LINK</h3>
-            <a>{project.liveLink}</a>
+            <a href={project.liveLink}>{project.liveLink}</a>
           </div>
         </div>
 

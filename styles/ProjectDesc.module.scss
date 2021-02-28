@@ -29,6 +29,7 @@
   .detailsRow {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.6rem;
 
     p {
@@ -47,14 +48,39 @@
   .screenShotCardContainer {
     flex-direction: column;
   }
+
+  .detailsRow {
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center !important;
+    }
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .detailsRow {
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center !important;
+    }
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  .detailsRow {
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center !important;
+    }
+  }
 }
 
 /* Large desktop */

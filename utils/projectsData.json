@@ -49,8 +49,17 @@
     "role": "This is a self made project so learning React Native was the main focus. I designed and coded this app from the ground up using React Native with Expo.",
     "approach": "When i came up with the idea i started out drawing some wireframes. When i was happy with the result i looked at the documentation and started following some basic tutorials from React Native. After playing with it for a while i started making the app. I used Trello to organize what needed to happen and had some good friends check up on it to receive feedback.",
     "pictures": [{
-      "pictureName": "",
-      "pictureDescription": ""
+      "pictureName": "movix_picture_1.jpg",
+      "pictureDescription": "This is a screenshot of the first thing you'll see when logged in."
+    }, {
+      "pictureName": "movix_picture_2.jpg",
+      "pictureDescription": "When you click on the movie you'll get this compact view of all the needed info like duration, rating, summary and some links to trailers."
+    }, {
+      "pictureName": "movix_picture_3.jpg",
+      "pictureDescription": "Whenever you mark a movie it gets saved a list like this so you can find them again later."
+    }, {
+      "pictureName": "movix_picture_4.jpg",
+      "pictureDescription": "When you click on a movie from the list above you will get a more detailed screen about that movie."
     }],
     "cardImg": "MovixCard.png"
   },
@@ -65,8 +74,14 @@
     "role": "Drawing, Designing and Uploading them on Dribbble.",
     "approach": "I mostly start out by drawing some basic design's on paper and when i'm happy with them i start remaking them in Adobe XD",
     "pictures": [{
-      "pictureName": "",
-      "pictureDescription": ""
+      "pictureName": "dribbble1.png",
+      "pictureDescription": "This a redesign i came up with for one of Belgiums most popular news sites."
+    }, {
+      "pictureName": "dribbble2.png",
+      "pictureDescription": "Here's a design i made for a site i had in mind."
+    }, {
+      "pictureName": "dribbble3.png",
+      "pictureDescription": "I redesigned the twitter register page to make it more modern."
     }],
     "cardImg": "DribbbleCard.png"
   },

@@ -25,8 +25,8 @@ const AboutPage = () => {
         </h1>
         <div className={styles.formContainer}>
           <p>
-            I'm interested in new opportunities. However if you have any other
-            questions, feel free to contact me using the form below.
+            Use to form below to contact me and i'll try to get back to you as
+            quickly as possible.
           </p>
           <form>
             <div className={styles.formRow}>
