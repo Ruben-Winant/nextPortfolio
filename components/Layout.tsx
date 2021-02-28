@@ -22,7 +22,7 @@ const Layout = ({
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta
         name="description"
-        content="I make modern data driven web and mobile applications."
+        content="I'm Ruben, i'm a web developer living in Bierbeek where i create modern data driven web and mobile applications."
       />
     </Head>
     <header className={styles.header}>
